@@ -1,4 +1,4 @@
-// Exemplo de abstração: Representar um carro
+
 
 class Car {
     constructor(brand, model, year) {
