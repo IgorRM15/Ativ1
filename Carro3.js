@@ -39,7 +39,7 @@ class Car {
   }
   
   // Criando uma instância do objeto Car
-  const myCar = new Car("Lamborghini", "Bugatti", 2023);
+  const myCar = new Car( "Bugatti", 2023);
   const myCar1 = new Car("Lamborghini");
   
   // Usando os métodos abstraídos da classe Car
