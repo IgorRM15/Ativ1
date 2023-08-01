@@ -1,5 +1,4 @@
 
-
 class Car {
     constructor(brand, model, year) {
       this.brand = brand;
@@ -23,24 +22,25 @@ class Car {
     accelerate() {
       if (this.isOn) {
         this.speed += 10;
-        console.log(`${this.brand} ${this.model} is accelerating. Current speed: ${this.speed} km/h.`);
+        console.log(`${this.brand} ${this.model} está acelerando. Velocidade atual: ${this.speed} km/h.`);
       } else {
-        console.log(`${this.brand} ${this.model} is off. Cannot accelerate.`);
+        console.log(`${this.brand} ${this.model} está fora. não pode acelerar.`);
       }
     }
   
     brake() {
       if (this.isOn && this.speed > 0) {
         this.speed -= 10;
-        console.log(`${this.brand} ${this.model} is braking. Current speed: ${this.speed} km/h.`);
+        console.log(`${this.brand} ${this.model} está freando. Velocidade atual: ${this.speed} km/h.`);
       } else {
-        console.log(`${this.brand} ${this.model} is already stopped.`);
+        console.log(`${this.brand} ${this.model} ja esta parado.`);
       }
     }
   }
   
   // Criando uma instância do objeto Car
-  const myCar = new Car("Toyota", "Corolla", 2022);
+  const myCar = new Car("Lamborghini", "Bugatti", 2023);
+  const myCar1 = new Car("Lamborghini");
   
   // Usando os métodos abstraídos da classe Car
   myCar.turnOn();
